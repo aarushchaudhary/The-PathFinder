@@ -38,3 +38,35 @@ pip install python-dateutil
 pip install subprocess.run
 pip install thread6
 ```
+## How to run and Connections
+After installing all dependencies and libraries open whatever function file that you wish to use, note that the Voice Menu and Wakeword files are not working as expected.
+### Connection Diagram
+![circuit_image](https://github.com/user-attachments/assets/e41170c2-53f1-4e83-a02c-1d89ed03bcaa)
+### Connections
+* ENA- 25
+* IN1- 27
+* IN2- 22
+* ENB- 17
+* IN3- 23
+* IN4- 24
+(These are Raspberry Pi GPIO)
+---
+* OUT1- Motor A +ve
+* OUT2- Motor A -ve
+* OUT3- Motor B -ve
+* OUT4- Motor B +ve
+---
+* +12V- Battery +ve
+* GND- Battery -ve, Servo 1 -ve, Servo 2 -ve, RPi Ground GPIO, Speaker Module -ve
+* +5V- Servo 1 +ve, Servo 2 +ve, Speaker Module +ve
+---
+* Servo 1 PWM (PAN Control)- 12
+* Servo 2 PWM (TILT Control)- 13
+(These are Raspberry Pi GPIO)
+---
+Apart from this connect the webcam to the usb port on the Raspberry Pi and connect bluetooth speaker module using bluetooth (default the pulseaudio output to bluetooth)
+
+### Pinout Diagram
+![raspberry-pi-pinout](https://github.com/user-attachments/assets/6ca5c245-9c44-480d-bee9-041be4a1e4f4)
+
+
