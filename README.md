@@ -1,4 +1,7 @@
 # The PathFinder
+
+![isometric](https://github.com/user-attachments/assets/151eff5d-a2d8-45b1-aa68-562f9d0d12c8)
+
 ## What is 'The PathFinder'
 The PathFinder as the names suggests is a rover, and it aims to bring the cost of automation down by offering an alternative to proprietary hardware. It uses a Raspberry Pi 3 Model B which is open source and cheap, also the entire thing runs on python.
 ## How does it work
@@ -69,4 +72,7 @@ Apart from this connect the webcam to the usb port on the Raspberry Pi and conne
 ### Pinout Diagram
 ![raspberry-pi-pinout](https://github.com/user-attachments/assets/6ca5c245-9c44-480d-bee9-041be4a1e4f4)
 
+## Future
+The Future of The PathFinder looks promising considering an inclusion of a robotic arm with object tracking in it, that could be used for picking up and placing back objects that will make it more useful.
 
+## License
