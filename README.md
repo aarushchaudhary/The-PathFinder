@@ -8,7 +8,7 @@ The PathFinder as the names suggests is a rover, and it aims to bring the cost o
 For the main board it uses a Raspberry Pi 3 Model B, L298N motor driver for its movement, for motors and wheels geared BO motors are being used. The motor driver is connected to a 18650 battery pack delivering about 12V power, and two servo motors with a pan and tilt mount control the movement for face tracking through Raspberry Pi’s official camera (currently my Raspberry Pi camera is broken so i have used a Logitech C270 webcam that also has a mic inbuilt) and the pan and tilt mount also houses a mic for voice command.
 As of now python is being used to run the motor driver and pan and tilt mount, for the voice detection and wakeword detection again python is being used with speech recognition and pttsx3 library (currently the voice recognition is not fully fucntioning, you can currently only control PathFinder's movement through your voice completely).
 ## In Action
-It currently has 5 functions in present release-
+It currently has 6 functions in present release-
 1. Voicecar- Control the movement of The PathFinder using your voice, commands are- front, back, left, right, stop. (filename- voice_control_main.py)
 2. Facetrack- Pan and tilt face tracking using mediapipe library of Google. (filename- face_tracking_pantilt.py)
 3. Follow Me- Control the movement of The PathFinder using your face, where ever you go it will follow you using its pan and tilt, motors and camera.
@@ -16,6 +16,7 @@ It currently has 5 functions in present release-
    (Has two files, face_tracking_nopan_main_control.py is currently working fine but has no pan in camera, face_tracking_main_control.py has both pan and tilt but is currently not working as expected)
 4. Voice Menu- All voice commands are present here, you can execute any function using your voice, currently under development. (filename- voice_detection_main.py)
 5. Wakeword- Main function, works like your personal assistant, the keyword is 'pathfinder', on hearing the keyword the Voice Menu opens, currently under development. (filename- wakeword_main.py)
+6. Game Car- Control PathFinder's movement using Xbox compatible controller with a camera feed. (Right joystick for steer, RT for speed, Left joystick for camera pan and tilt)
 
 Apart from this a centre_servo.py file is there to center the servo motor if needed.
 ## Required dependencies
